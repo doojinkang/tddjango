@@ -7,9 +7,12 @@ Environment
 
 Chrome Web driver download page
   - https://sites.google.com/a/chromium.org/chromedriver/downloads
+  - copy chromedriver to /usr/local/bin
+  - In order to be accessed by $PATH.
 
 Initial steps
 
+```
   $ mkdir tdd
   $ cd tdd
 
@@ -21,8 +24,11 @@ Initial steps
 
   $ vi functional_tests.py
 
+```
+
 Directory Structure
 
+```
   vtdd       : python virtual env
   tddjango   : root of git repository
   superlists : django project root
@@ -34,4 +40,4 @@ Directory Structure
                      +-- superlists  ---- manage.py
                                       +-- superlists ---- settings.py
 
-
+```

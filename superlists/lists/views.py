@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.http import HttpResponse
 from .models import Item
 
@@ -9,6 +10,7 @@ def home_page(request):
         item = Item()
         item.text = new_item_text
         item.save()
+        return redirect('/')
     else:
         new_item_text = ''
 
